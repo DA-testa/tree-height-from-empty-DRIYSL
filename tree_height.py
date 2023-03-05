@@ -38,15 +38,16 @@ def main():
         except:
             print("ERROR")
             return
-        elif input_method == "I":
-             n = input().strip()
-            parents = input().strip().split()
-          else:
-            print("Invalid input method.")
-            return
+    elif input_method == "I":
+        n = input().strip()
+        parents = input().strip().split()
+    else:
+        print("Invalid input method.")
+        return
         
-        height = compute_height(n, parents)
-        print(int(height))
+        
+    height = compute_height(n, parents)
+    print(int(height))
         
                     
     
