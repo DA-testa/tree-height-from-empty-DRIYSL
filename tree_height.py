@@ -35,9 +35,9 @@ def main():
             with open(f"./test/{file_name}") as file:
                 n = file.readline().strip()
                 parents = file.readline().strip().split()
-                except:
-                    print("ERROR")
-                return
+        except:
+            print("ERROR")
+            return
          elif input_method == "I":
             n = input().strip()
             parents = input().strip().split()
