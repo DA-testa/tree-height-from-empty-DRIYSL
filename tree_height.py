@@ -38,8 +38,8 @@ def main():
         except:
             print("ERROR")
             return
-         elif input_method == "I":
-            n = input().strip()
+        elif input_method == "I":
+             n = input().strip()
             parents = input().strip().split()
           else:
             print("Invalid input method.")
@@ -57,3 +57,4 @@ def main():
 sys.setrecursionlimit(10**7)  # max depth of recursion
 threading.stack_size(2**27)   # new thread will get stack of such size
 threading.Thread(target=main).start()
+            
