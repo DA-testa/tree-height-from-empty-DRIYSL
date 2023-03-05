@@ -14,15 +14,15 @@ def compute_height(n, parents:):
             continue
          height = 0
         j =1 
-        while j! = -1:
-            if heights [j] >0:
+        while j != -1:
+            if heights [j] > 0:
                 height += heights[j]
                 break
-               else:
-                height +=1
+            else:
+                height += 1
                 j= int(parents[j])
               heights[i] = height
-              if heights > max_height:
+              if height > max_height:
                     max_height = height
     return max_height
 
@@ -35,8 +35,8 @@ def main():
             with open(f"./test/{file_name}") as file:
                 n = file.readline().strip()
                 parents = file.readline().strip().split()
-       except:
-                print("ERROR")
+                except:
+                    print("ERROR")
                 return
          elif input_method == "I":
             n = input().strip()
@@ -45,7 +45,7 @@ def main():
             print("Invalid input method.")
             return
         
-        height = compute_height(n,parents)
+        height = compute_height(n, parents)
         print(int(height))
         
                     
@@ -57,5 +57,3 @@ def main():
 sys.setrecursionlimit(10**7)  # max depth of recursion
 threading.stack_size(2**27)   # new thread will get stack of such size
 threading.Thread(target=main).start()
-main()
-# print(numpy.array([1,2,3]))
