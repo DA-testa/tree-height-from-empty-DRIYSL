@@ -13,7 +13,7 @@ def compute_height(n, parents):
         if heights[i] > 0:
             continue
          height = 0
-        j =1 
+        j = i 
         while j != -1:
             if heights [j] > 0:
                 height += heights[j]
