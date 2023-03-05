@@ -6,7 +6,7 @@ import threading
 import numpy
 
 
-def compute_height(n, parents:):
+def compute_height(n, parents):
     heights = np.zeros(int(n))
     max_height = 0
     for i in range(int(n)):
