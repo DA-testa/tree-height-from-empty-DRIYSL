@@ -22,9 +22,9 @@ def compute_height(n, parents):
             else:
                 height += 1
                 j= int(parents[j])
-                heights[i] = height
-                if height > max_height:
-                    max_height = height
+        heights[i] = height
+        if height > max_height:
+            max_height = height
     return max_height
 
 def main():
@@ -42,9 +42,7 @@ def main():
     elif input_method == "I":
         n = input().strip()
         parents = input().strip().split()
-    else:
-        print("Invalid input method.")
-        return
+ 
         
         
     height = compute_height(n, parents)
